@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-blue-50 to-blue-100 min-h-screen flex flex-col items-center p-4">
+  <header class="text-center mb-8">
+    <h1 class="text-4xl font-bold text-blue-800 mb-2">Weather Dashboard</h1>
+    <p class="text-gray-600 text-lg">Stay updated with real-time weather forecasts</p>
+  </header>
+
+  <main class="w-full max-w-screen-lg bg-white shadow-lg rounded-lg p-6">
+    <!-- Search Form -->
+    <form id="search-form" class="flex flex-col sm:flex-row items-center gap-2 mb-6">
+      <input 
+        type="text" 
+        id="city-input" 
+        placeholder="E.g., New York, London, Tokyo" 
+        class="flex-grow p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+      >
+      <button 
+        type="submit" 
+        class="bg-blue-600 text-white px-6 py-3 rounded-md shadow-md hover:bg-blue-700 focus:ring-2 focus:ring-blue-500"
+      >
+        Search
+      </button>
+    </form>
+
+    <!-- Current Location Button -->
+    <button 
+      id="current-location" 
+      class="bg-green-600 text-white px-6 py-3 rounded-md w-full sm:w-auto shadow-md hover:bg-green-700 focus:ring-2 focus:ring-green-500 mb-4"
+    >
+      Use Current Location
+    </button>
+
+    <!-- Dropdown for Recent Searches -->
+    <div id="recent-searches" class="hidden mb-6">
+      <label for="recent-cities" class="block text-gray-700 mb-2">Recently Searched Cities:</label>
+      <select 
+        id="recent-cities" 
+        class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+      >
+        <option value="" disabled selected>Select a city</option>
+      </select>
+    </div>
+
+    <!-- Weather Display -->
+    <div id="weather-display" class="hidden bg-blue-50 p-6 rounded-lg shadow-md">
+      <h2 class="text-2xl font-semibold text-blue-700" id="city-name"></h2>
+      <p id="current-weather" class="text-gray-700 text-lg mb-4"></p>
+      <div class="grid grid-cols-2 gap-4">
+        <p class="text-gray-700"><strong>Temperature:</strong> <span id="temperature"></span>°C</p>
+        <p class="text-gray-700"><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+        <p class="text-gray-700"><strong>Wind Speed:</strong> <span id="wind-speed"></span> km/h</p>
+      </div>
+    </div>
+
+    <!-- Extended Forecast -->
+    <div id="extended-forecast" class="hidden mt-8">
+      <h3 class="text-xl font-semibold text-blue-700 mb-4">5-Day Forecast</h3>
+      <div id="forecast-cards" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Cards will be dynamically added here -->
+      </div>
+    </div>
+  </main>
+
+  <footer class="mt-auto text-center py-4 text-gray-500">
+    <p>&copy; 2025 Weather Dashboard. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
