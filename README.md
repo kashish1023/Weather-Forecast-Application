@@ -28,16 +28,9 @@ This Weather Forecast Application provides real-time weather updates and a 5-day
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/weather-forecast-app.git
+   git clone https://github.com/kashish1023/weather-forecast-app.git
 
    
-### Instructions for Use:
-1. **Replace `yourusername`**: Make sure to replace `yourusername` in the clone URL with your actual GitHub username.
-2. **Add License Information**: If you have a specific license for your project, make sure to include it in the `LICENSE` file and reference it in the README.
-3. **Customize Further**: Feel free to add any additional sections or information that you think would be helpful for users or contributors.
-
-Once you have made the necessary adjustments, you can save this as `README.md` in the root of your project directory. This will provide a clear and informative overview of your project for anyone visiting your GitHub repository.
-
 ### Project Structure 
 weather-forecast-application/
 │
