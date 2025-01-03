@@ -1,9 +1,7 @@
 # Weather-Forecast-Application
-A responsive weather dashboard built with Tailwind CSS and JavaScript to provide real-time weather updates. This application allows users to search for weather data by city or use their current location, fetching data from an API. 
-
-# Weather Forecast Application
 
 ## Overview
+A responsive weather dashboard built with Tailwind CSS and JavaScript to provide real-time weather updates. This application allows users to search for weather data by city or use their current location, fetching data from an API. 
 This Weather Forecast Application provides real-time weather updates and a 5-day forecast for any city around the world. Users can search for weather data by city name or use their current location to get instant weather information. The application also maintains a dropdown of recently searched cities, which is cleared upon refreshing the page.
 
 ## Features
